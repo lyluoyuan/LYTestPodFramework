@@ -1,0 +1,11 @@
+framework module LYLib {
+  umbrella header "LYLib.h"
+  export *
+
+  module * { export * }
+}
+
+module LYLib.Swift {
+  header "LYLib-Swift.h"
+  requires objc
+}

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYTestPodFramework'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of LYTestPodFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -17,20 +17,21 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = "A short description of LYTestPodFramework."
 
   s.homepage         = 'https://github.com/lyluoyuan@126.com/LYTestPodFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lyluoyuan@126.com' => 'lyluoyuan@126.com' }
-  s.source           = { :git => 'https://github.com/lyluoyuan@126.com/LYTestPodFramework.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lyluoyuan/LYTestPodFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'LYTestPodFramework/Classes/**/*'
+  #s.source_files = 'LYTestPodFramework/Classes/**/*'
+  
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  s.vendored_frameworks = "LYLib.framework"#放同级目录
   
   # s.resource_bundles = {
   #   'LYTestPodFramework' => ['LYTestPodFramework/Assets/*.png']

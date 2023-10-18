@@ -14,6 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7158DA578FA7C0261DA699ED /* Pods_LYTestPodFramework_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD32266CB467F96DC4B94A63 /* Pods_LYTestPodFramework_Tests.framework */; };
+		BFB326B82ADFC695005D12FB /* LYLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB326B62ADFC61E005D12FB /* LYLib.framework */; };
+		BFB326B92ADFC695005D12FB /* LYLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFB326B62ADFC61E005D12FB /* LYLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA8ECECDFF328D61BE9F66C8 /* Pods_LYTestPodFramework_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42253CA70BEB1FA02187FB63 /* Pods_LYTestPodFramework_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BFB326B52ADFB299005D12FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFB326B92ADFC695005D12FB /* LYLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		000951637A3C64EFC573003B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		17D98FD2A3BB1304C348A88A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -56,11 +72,12 @@
 		607FACE51AFB9204008FA782 /* LYTestPodFramework_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYTestPodFramework_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8A44EB8CE293A551F6011340 /* LYTestPodFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYTestPodFramework.podspec; path = ../LYTestPodFramework.podspec; sourceTree = "<group>"; };
+		8A44EB8CE293A551F6011340 /* LYTestPodFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYTestPodFramework.podspec; path = ../LYTestPodFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D18BBA4B9E8C495B1883198 /* Pods-LYTestPodFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYTestPodFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LYTestPodFramework_Tests/Pods-LYTestPodFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B64F941C2F2E0C9459592B27 /* Pods-LYTestPodFramework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYTestPodFramework_Example.release.xcconfig"; path = "Target Support Files/Pods-LYTestPodFramework_Example/Pods-LYTestPodFramework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BD32266CB467F96DC4B94A63 /* Pods_LYTestPodFramework_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYTestPodFramework_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF27BDB32ADF799B002A58D6 /* LYLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LYLib.xcodeproj; path = ../LYLib/LYLib.xcodeproj; sourceTree = "<group>"; };
+		BFB326B62ADFC61E005D12FB /* LYLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LYLib.framework; path = ../../LYLib.framework; sourceTree = "<group>"; };
 		ED39BCE9596B9744B7B37143 /* Pods-LYTestPodFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYTestPodFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-LYTestPodFramework_Example/Pods-LYTestPodFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8ECECDFF328D61BE9F66C8 /* Pods_LYTestPodFramework_Example.framework in Frameworks */,
+				BFB326B82ADFC695005D12FB /* LYLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +136,7 @@
 		607FACD21AFB9204008FA782 /* Example for LYTestPodFramework */ = {
 			isa = PBXGroup;
 			children = (
+				BFB326B02ADFB23E005D12FB /* libs */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -184,6 +203,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BFB326B02ADFB23E005D12FB /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BFB326B62ADFC61E005D12FB /* LYLib.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +224,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				35AEADC54E090564E3EF8F94 /* [CP] Embed Pods Frameworks */,
 				BFB326AB2ADF7F83005D12FB /* ShellScript */,
+				BFB326B52ADFB299005D12FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,7 +418,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho $(BUILD_ROOT} \n#cp $(BUILD_ROOT}/Debug-iphoneos/LYLib.framework ../LYLib.framework\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#echo \"${BUILD_ROOT}\" > test.sh\ncp -rf /Users/luoyuan/Library/Developer/Xcode/DerivedData/LYTestPodFramework-cmmcavqllutzcudobqeicreevtka/Build/Products/Release-iphoneos/LYLib.framework ../LYLib.framework\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -547,6 +575,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GCH357V29;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LYTestPodFramework\"",
+				);
 				INFOPLIST_FILE = LYTestPodFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -564,6 +596,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GCH357V29;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LYTestPodFramework\"",
+				);
 				INFOPLIST_FILE = LYTestPodFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
