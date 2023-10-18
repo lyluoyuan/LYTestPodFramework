@@ -1,0 +1,16 @@
+PODS:
+  - LYTestPodFramework (0.1.0)
+
+DEPENDENCIES:
+  - LYTestPodFramework (from `../`)
+
+EXTERNAL SOURCES:
+  LYTestPodFramework:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LYTestPodFramework: d8d474dee54af1f75db0146c6f30e4b224b860fc
+
+PODFILE CHECKSUM: 80c1874c4f5ae7ae127e951a1a80ceefc4adce78
+
+COCOAPODS: 1.11.3

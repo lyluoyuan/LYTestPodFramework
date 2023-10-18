@@ -1,0 +1,6 @@
+framework module LYTestPodFramework {
+  umbrella header "LYTestPodFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

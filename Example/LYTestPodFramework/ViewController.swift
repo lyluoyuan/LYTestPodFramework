@@ -7,12 +7,19 @@
 //
 
 import UIKit
-
+import LYLib
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        let libVC = LYLibTestViewController()
+        self.present(libVC, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

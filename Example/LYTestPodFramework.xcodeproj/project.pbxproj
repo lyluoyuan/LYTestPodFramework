@@ -25,11 +25,25 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = LYTestPodFramework;
 		};
+		BF27BDB82ADF799B002A58D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF27BDB32ADF799B002A58D6 /* LYLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF27BD992ADF7988002A58D6;
+			remoteInfo = LYLib;
+		};
+		BF27BDBA2ADF799B002A58D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF27BDB32ADF799B002A58D6 /* LYLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF27BDA32ADF7988002A58D6;
+			remoteInfo = LYLibTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000951637A3C64EFC573003B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		17D98FD2A3BB1304C348A88A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		000951637A3C64EFC573003B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		17D98FD2A3BB1304C348A88A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		42253CA70BEB1FA02187FB63 /* Pods_LYTestPodFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYTestPodFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		438EA7B75861F02904701F6B /* Pods-LYTestPodFramework_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYTestPodFramework_Tests.release.xcconfig"; path = "Target Support Files/Pods-LYTestPodFramework_Tests/Pods-LYTestPodFramework_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LYTestPodFramework_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYTestPodFramework_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +56,11 @@
 		607FACE51AFB9204008FA782 /* LYTestPodFramework_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYTestPodFramework_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8A44EB8CE293A551F6011340 /* LYTestPodFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LYTestPodFramework.podspec; path = ../LYTestPodFramework.podspec; sourceTree = "<group>"; };
+		8A44EB8CE293A551F6011340 /* LYTestPodFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYTestPodFramework.podspec; path = ../LYTestPodFramework.podspec; sourceTree = "<group>"; };
 		9D18BBA4B9E8C495B1883198 /* Pods-LYTestPodFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYTestPodFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LYTestPodFramework_Tests/Pods-LYTestPodFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B64F941C2F2E0C9459592B27 /* Pods-LYTestPodFramework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYTestPodFramework_Example.release.xcconfig"; path = "Target Support Files/Pods-LYTestPodFramework_Example/Pods-LYTestPodFramework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BD32266CB467F96DC4B94A63 /* Pods_LYTestPodFramework_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYTestPodFramework_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF27BDB32ADF799B002A58D6 /* LYLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LYLib.xcodeproj; path = ../LYLib/LYLib.xcodeproj; sourceTree = "<group>"; };
 		ED39BCE9596B9744B7B37143 /* Pods-LYTestPodFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYTestPodFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-LYTestPodFramework_Example/Pods-LYTestPodFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +96,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				BF27BDB32ADF799B002A58D6 /* LYLib.xcodeproj */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for LYTestPodFramework */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -156,8 +172,16 @@
 				9D18BBA4B9E8C495B1883198 /* Pods-LYTestPodFramework_Tests.debug.xcconfig */,
 				438EA7B75861F02904701F6B /* Pods-LYTestPodFramework_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF27BDB42ADF799B002A58D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF27BDB92ADF799B002A58D6 /* LYLib.framework */,
+				BF27BDBB2ADF799B002A58D6 /* LYLibTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +196,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				35AEADC54E090564E3EF8F94 /* [CP] Embed Pods Frameworks */,
+				BFB326AB2ADF7F83005D12FB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,10 +238,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8GCH357V29;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8GCH357V29;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,12 +254,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BF27BDB42ADF799B002A58D6 /* Products */;
+					ProjectRef = BF27BDB32ADF799B002A58D6 /* LYLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* LYTestPodFramework_Example */,
@@ -240,6 +274,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BF27BDB92ADF799B002A58D6 /* LYLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LYLib.framework;
+			remoteRef = BF27BDB82ADF799B002A58D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF27BDBB2ADF799B002A58D6 /* LYLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LYLibTests.xctest;
+			remoteRef = BF27BDBA2ADF799B002A58D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		607FACCE1AFB9204008FA782 /* Resources */ = {
@@ -323,6 +374,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BFB326AB2ADF7F83005D12FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho $(BUILD_ROOT} \n#cp $(BUILD_ROOT}/Debug-iphoneos/LYLib.framework ../LYLib.framework\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -478,7 +546,9 @@
 			baseConfigurationReference = ED39BCE9596B9744B7B37143 /* Pods-LYTestPodFramework_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8GCH357V29;
 				INFOPLIST_FILE = LYTestPodFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +563,9 @@
 			baseConfigurationReference = B64F941C2F2E0C9459592B27 /* Pods-LYTestPodFramework_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8GCH357V29;
 				INFOPLIST_FILE = LYTestPodFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D18BBA4B9E8C495B1883198 /* Pods-LYTestPodFramework_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8GCH357V29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +589,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +603,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 438EA7B75861F02904701F6B /* Pods-LYTestPodFramework_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8GCH357V29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
